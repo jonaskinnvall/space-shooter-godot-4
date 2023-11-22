@@ -9,6 +9,7 @@
 offset_right = 328.0
 offset_bottom = 184.0
 color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
 
 [node name="Ship" parent="." instance=ExtResource("1_rmpkl")]
 position = Vector2(32, 96)
