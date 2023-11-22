@@ -1,8 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://5bln10sh727g"]
+[gd_scene load_steps=3 format=3 uid="uid://5bln10sh727g"]
 
 [ext_resource type="PackedScene" uid="uid://dmyou4rcpb6u8" path="res://ship.tscn" id="1_rmpkl"]
+[ext_resource type="PackedScene" uid="uid://qheqntjrsq4r" path="res://enemy.tscn" id="2_ofn8x"]
 
 [node name="World" type="Node2D"]
 
 [node name="Ship" parent="." instance=ExtResource("1_rmpkl")]
 position = Vector2(32, 96)
+
+[node name="Enemy" parent="." instance=ExtResource("2_ofn8x")]
+position = Vector2(344, 48)
+
+[node name="Enemy2" parent="." instance=ExtResource("2_ofn8x")]
+position = Vector2(184, 96)
+
+[node name="Enemy3" parent="." instance=ExtResource("2_ofn8x")]
+position = Vector2(208, 152)
+
+[node name="Enemy4" parent="." instance=ExtResource("2_ofn8x")]
+position = Vector2(200, 72)
+
+[node name="Enemy5" parent="." instance=ExtResource("2_ofn8x")]
+position = Vector2(272, 120)
+
+[node name="Enemy6" parent="." instance=ExtResource("2_ofn8x")]
+position = Vector2(344, 144)
+
+[node name="Enemy7" parent="." instance=ExtResource("2_ofn8x")]
+position = Vector2(392, 96)
