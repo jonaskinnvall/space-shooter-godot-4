@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2u3kowkhrqk1"]
+[gd_scene load_steps=3 format=3 uid="uid://c2u3kowkhrqk1"]
 
 [ext_resource type="Script" path="res://hit_effect.gd" id="1_gdp4m"]
+[ext_resource type="AudioStream" uid="uid://b0pty80fci15r" path="res://Assets/hit_sound.wav" id="2_nwyhh"]
 
 [node name="HitEffect" type="Node2D"]
 script = ExtResource("1_gdp4m")
@@ -12,3 +13,7 @@ spread = 180.0
 gravity = Vector2(2.08165e-12, 2.08165e-12)
 initial_velocity_min = 1.0
 initial_velocity_max = 50.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_nwyhh")
+autoplay = true
