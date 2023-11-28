@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://5bln10sh727g"]
+[gd_scene load_steps=6 format=3 uid="uid://5bln10sh727g"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_bke21"]
 [ext_resource type="PackedScene" uid="uid://dmyou4rcpb6u8" path="res://ship.tscn" id="1_rmpkl"]
 [ext_resource type="PackedScene" uid="uid://cvvoe1ckuhco6" path="res://enemy_spawner.tscn" id="3_8ns3i"]
 [ext_resource type="LabelSettings" uid="uid://be2us5grs7bkp" path="res://label_settings.tres" id="4_g8cvr"]
+[ext_resource type="PackedScene" uid="uid://blrbsw31tqohp" path="res://star_particles.tscn" id="5_iicc0"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_bke21")
@@ -29,15 +30,4 @@ label_settings = ExtResource("4_g8cvr")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="StarParticles" type="CPUParticles2D" parent="."]
-position = Vector2(320, 90)
-amount = 200
-lifetime = 7.0
-preprocess = 7.0
-emission_shape = 3
-emission_rect_extents = Vector2(1, 90)
-direction = Vector2(-1, 2.08165e-12)
-spread = 0.0
-gravity = Vector2(2.08165e-12, 2.08165e-12)
-initial_velocity_min = 50.0
-initial_velocity_max = 100.0
+[node name="StarParticles" parent="." instance=ExtResource("5_iicc0")]
