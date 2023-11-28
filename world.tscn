@@ -1,13 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://5bln10sh727g"]
+[gd_scene load_steps=5 format=3 uid="uid://5bln10sh727g"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_bke21"]
 [ext_resource type="PackedScene" uid="uid://dmyou4rcpb6u8" path="res://ship.tscn" id="1_rmpkl"]
 [ext_resource type="PackedScene" uid="uid://cvvoe1ckuhco6" path="res://enemy_spawner.tscn" id="3_8ns3i"]
-[ext_resource type="FontFile" uid="uid://cx2m4dwici026" path="res://Assets/pixel_rpg.ttf" id="3_eant3"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_ulxkv"]
-font = ExtResource("3_eant3")
-font_size = 6
+[ext_resource type="LabelSettings" uid="uid://be2us5grs7bkp" path="res://label_settings.tres" id="4_g8cvr"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_bke21")
@@ -29,7 +25,7 @@ offset_left = 128.0
 offset_right = 192.0
 offset_bottom = 16.0
 text = "Score: 0"
-label_settings = SubResource("LabelSettings_ulxkv")
+label_settings = ExtResource("4_g8cvr")
 horizontal_alignment = 1
 vertical_alignment = 1
 

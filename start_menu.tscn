@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cb0rjmo7rclmw"]
+[gd_scene load_steps=2 format=3 uid="uid://cb0rjmo7rclmw"]
+
+[ext_resource type="LabelSettings" uid="uid://be2us5grs7bkp" path="res://label_settings.tres" id="1_wuu5r"]
 
 [node name="StartMenu" type="ColorRect"]
 anchors_preset = 15
@@ -20,5 +22,6 @@ grow_vertical = 2
 layout_mode = 2
 text = "Press Space to Start
 Press Escape to Quit"
+label_settings = ExtResource("1_wuu5r")
 horizontal_alignment = 1
 vertical_alignment = 1
