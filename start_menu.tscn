@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cb0rjmo7rclmw"]
+[gd_scene load_steps=3 format=3 uid="uid://cb0rjmo7rclmw"]
 
+[ext_resource type="Script" path="res://start_menu.gd" id="1_c4uny"]
 [ext_resource type="LabelSettings" uid="uid://be2us5grs7bkp" path="res://label_settings.tres" id="1_wuu5r"]
 
 [node name="StartMenu" type="ColorRect"]
@@ -9,6 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+script = ExtResource("1_c4uny")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
