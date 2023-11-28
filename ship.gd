@@ -3,6 +3,8 @@ extends Area2D
 @export var speed = 100
 const LASER_SCENE = preload("res://laser.tscn")
 
+signal destroyed
+
 func _process(delta):
 	if Input.is_action_pressed("ui_down"):
 		position.y += speed*delta
@@ -18,3 +20,4 @@ func _process(delta):
 func _on_area_entered(area):
 	area.queue_free()
 	queue_free()
+	destroyed.emit()

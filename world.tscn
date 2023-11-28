@@ -31,3 +31,5 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="StarParticles" parent="." instance=ExtResource("5_iicc0")]
+
+[connection signal="destroyed" from="Ship" to="." method="_on_ship_destroyed"]
