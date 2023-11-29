@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 MusicPlayer="*res://music_player.tscn"
 SaveLoad="*res://save_load.gd"
+StarParticles="*res://star_particles.tscn"
 
 [display]
 

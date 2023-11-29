@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://5bln10sh727g"]
+[gd_scene load_steps=5 format=3 uid="uid://5bln10sh727g"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_bke21"]
 [ext_resource type="PackedScene" uid="uid://dmyou4rcpb6u8" path="res://ship.tscn" id="1_rmpkl"]
 [ext_resource type="PackedScene" uid="uid://cvvoe1ckuhco6" path="res://enemy_spawner.tscn" id="3_8ns3i"]
 [ext_resource type="LabelSettings" uid="uid://be2us5grs7bkp" path="res://label_settings.tres" id="4_g8cvr"]
-[ext_resource type="PackedScene" uid="uid://blrbsw31tqohp" path="res://star_particles.tscn" id="5_iicc0"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_bke21")
@@ -29,7 +28,5 @@ text = "Score: 0"
 label_settings = ExtResource("4_g8cvr")
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="StarParticles" parent="." instance=ExtResource("5_iicc0")]
 
 [connection signal="destroyed" from="Ship" to="." method="_on_ship_destroyed"]
